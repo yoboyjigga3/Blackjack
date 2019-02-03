@@ -1,0 +1,76 @@
+#include <iostream>
+using namespace std;
+
+
+
+
+int main(int argc, char const *argv[])
+{
+    //menu
+    float p1Bank = 100,
+            p2Bank = 100;
+    int menu; 
+    char choice;
+    bool play = true,
+         exit; 
+    
+
+    cout << "Welcome to blackjack";
+    cout << "--------------------";
+
+    cout << "1. Play Game" << endl;
+    cout << "2. Help" << endl; 
+    cout << "3. Exit" << endl;
+    cout << "Choice(1,2,3):";
+
+    cin >> menu;
+    do{
+        switch(menu){
+            case 1:
+                exit = true; 
+                break;
+            case 2:
+                cout << "2 cards are ditributed to each player\nBets can be placed";
+                exit = false; 
+                break;
+            case 3:
+                play = false; 
+                exit = true;
+        }
+    }while(exit);
+
+
+    //play game
+    while(play){
+        
+        //Deal P1
+        
+        //Deal P2
+
+        //Bet P1
+
+        //Bet P2
+
+        //Hit/stay P1 
+
+        //hit/stay P2
+        
+        //compare cards
+
+        //adjust bank from bet
+
+        //print winner
+
+
+
+        cout << "Play again?(y/n):";
+        cin >> choice;
+
+        if (choice == 'n' - '0' || choice == 'N' - '0'){
+            play = false; 
+        }
+    }
+
+
+    return 0;
+}
